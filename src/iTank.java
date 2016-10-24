@@ -1,9 +1,15 @@
+import java.util.*;
 /**
- * Created by Guu on 10/19/2016 AD.
+ * Write a description of interface iSnake here.
+ * Created by SatrarinSaejew on 10/19/2016 AD.
  */
-public interface Tank {
 
-    public Tank append(int row, int col);
+
+
+
+public interface iTank {
+
+    public iTank append(int row, int col);
     public int hp();
     public int addHp();                             //add hp when pick up health
     public int attack();                            //attack point
