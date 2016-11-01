@@ -14,6 +14,7 @@ public class GameBattleCity extends Ucigame {
     private static int STATUS_HIT = 1;                  //mean tank hit by bullet
 
     /* field */
+    //
     private iTank tank;
     private iGrid grid;
     private Image tank;
