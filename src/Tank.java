@@ -7,6 +7,29 @@ import java.util.*;
 
 public class Tank implements iTank {
 
+    private char tankDirection;
+
+    public Tank(){
+        tankDirection = 'l';
+    }
+
+
+
+    @Override
+    public int hp() {
+        return 0;
+    }
+
+    @Override
+    public int addHp() {
+        return 0;
+    }
+
+    @Override
+    public int attack() {
+        return 0;
+    }
+
 
     /*
     public iTank append(int row, int col);

@@ -6,7 +6,7 @@ import java.util.*;
 
 public interface iTank {
 
-    public iTank append(int row, int col);
+    //public iTank append(int row, int col);
     public int hp();
     public int addHp();                             //add hp when pick up health
     public int attack();                            //attack point
