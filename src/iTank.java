@@ -7,8 +7,11 @@ import java.util.*;
 public interface iTank {
 
     //public iTank append(int row, int col);
-    public int hp();
-    public int addHp();                             //add hp when pick up health
-    public int attack();                            //attack point
+    public iTank hp();
+    public iTank addHp();                             //add hp when pick up health
+    public iTank attack();                            //attack point
+    public iPosition getHead();
+    public char getDirection();
+    public void setDirection(char dir);
 
 }

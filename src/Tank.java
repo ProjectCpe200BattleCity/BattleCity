@@ -16,20 +16,34 @@ public class Tank implements iTank {
 
 
     @Override
-    public int hp() {
-        return 0;
+    public iTank hp() {
+        return null;
     }
 
     @Override
-    public int addHp() {
-        return 0;
+    public iTank addHp() {
+        return null;
     }
 
     @Override
-    public int attack() {
-        return 0;
+    public iTank attack() {
+        return null;
     }
 
+    @Override
+    public iPosition getHead() {
+        return null;
+    }
+
+    @Override
+    public char getDirection() {
+        return tankDirection;
+    }
+
+    @Override
+    public void setDirection(char dir) {
+        tankDirection = dir;
+    }
 
     /*
     public iTank append(int row, int col);
