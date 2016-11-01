@@ -17,9 +17,9 @@ public class GameBattleCity extends Ucigame {
     //
     private iTank tank;
     private iGrid grid;
-    private Image tank;
-    private Image grit;
-    private Image tree;
+    private Image tankImg_1;
+    private Image treeImg_1;
+    //private Image tree;
 
     private boolean isStarted = false;
     private boolean isOver = false;
@@ -30,6 +30,28 @@ public class GameBattleCity extends Ucigame {
     private int speed = 5;                              //tank speed
 
     private Random random;                              //random drop item
+
+
+
+    /**
+     * Setup the game: loading image, initialize Tank, update initial tree location
+     */
+    public void setup()
+    {
+        window.size(iGrid.GRID_WIDTH * iGrid.GRID_COL, iGrid.GRID_HEIGHT * iGrid.GRID_ROW);
+        window.title("Tank");
+
+        tankImg_1 = getImage("Img/Tank_1.paint");
+        treeImg_1 = getImage("Img/Tree_1.paint");
+
+
+        grid = new Grid();
+        Tank = new Tank();
+        //Tank.append(4,7).append(4,8).append(4,9).append(4,10).append(4,11);
+
+        random = new Random();
+        //updateFood();
+    }
 
 
 
