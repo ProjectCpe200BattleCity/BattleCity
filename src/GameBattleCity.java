@@ -46,7 +46,7 @@ public class GameBattleCity extends Ucigame {
 
 
         grid = new Grid();
-        Tank = new Tank();
+        tank = new Tank();
         //Tank.append(4,7).append(4,8).append(4,9).append(4,10).append(4,11);
 
         random = new Random();
